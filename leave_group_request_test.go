@@ -10,10 +10,8 @@ var (
 )
 
 func TestLeaveGroupRequest(t *testing.T) {
-	var request *LeaveGroupRequest
-
-	request = new(LeaveGroupRequest)
-	request.GroupID = "foo"
-	request.MemberID = "bar"
+	request := new(LeaveGroupRequest)
+	request.GroupId = "foo"
+	request.MemberId = "bar"
 	testRequest(t, "basic", request, basicLeaveGroupRequest)
 }
